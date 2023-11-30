@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- Select -->
+		<link rel="stylesheet" href="css/choices.min.css" />
+		<!-- Scroll -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+		/>
+		<!-- Validate -->
+		<!-- <link rel="stylesheet" href="css/justValidateTooltip.min.css" /> -->
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ДЗ - База знаний</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="check__block">
+				<form class="check__form" action="#" method="post">
+					<h2 class="check__title">Категории :</h2>
+					<label for="dino" class="check-box">
+						<input
+							class="check-in"
+							type="checkbox"
+							name="dino"
+							id="dino"
+						/>
+						Динозавры
+						<span class="check-app"></span>
+					</label>
+					<label for="bear" class="check-box">
+						<input
+							class="check-in"
+							type="checkbox"
+							name="bear"
+							id="bear"
+						/>
+						Медведи
+						<span class="check-app"></span>
+					</label>
+					<label for="roe" class="check-box">
+						<input class="check-in" type="checkbox" name="roe" id="roe" />
+						Косули
+						<span class="check-app"></span>
+					</label>
+					<label for="fox" class="check-box">
+						<input class="check-in" type="checkbox" name="fox" id="fox" />
+						Лисы
+						<span class="check-app"></span>
+					</label>
+					<label for="wolf" class="check-box">
+						<input
+							class="check-in"
+							type="checkbox"
+							name="wolf"
+							id="wolf"
+						/>
+						Волки
+						<span class="check-app"></span>
+					</label>
+					<label for="deer-moose" class="check-box">
+						<input
+							class="check-in"
+							type="checkbox"
+							name="deer-moose"
+							id="deer-moose"
+						/>
+						Олени и лоси
+						<span class="check-app"></span>
+					</label>
+				</form>
+			</div>
+			<div class="select__block">
+				<select name="select" id="select">
+					<option value="">Материалы</option>
+					<option value="">Древесина</option>
+					<option value="">Металл</option>
+					<option value="">Камень</option>
+					<option value="">Пластик</option>
+					<option value="">Композитный</option>
+					<option value="">Гипс</option>
+				</select>
+			</div>
+			<div class="map__block">
+				<div class="map-yandex" id="mapYandex"></div>
+			</div>
+			<div class="scroll__block">
+				<div class="customScroll" data-simplebar>
+					<p class="scroll__text">
+						Сложно сказать, почему многие известные личности представлены
+						в&nbsp;исключительно положительном свете. Лишь активно
+						развивающиеся страны третьего мира будут объективно
+						рассмотрены соответствующими инстанциями. Мы&nbsp;вынуждены
+						отталкиваться от&nbsp;того, что высокотехнологичная концепция
+						общественного уклада представляет собой интересный эксперимент
+						проверки глубокомысленных рассуждений. Имеется спорная точка
+						зрения, гласящая примерно следующее: непосредственные
+						участники технического прогресса освещают чрезвычайно
+						интересные особенности картины в&nbsp;целом, однако конкретные
+						выводы, разумеется, обнародованы. Значимость этих проблем
+						настолько очевидна, что социально-экономическое развитие,
+						а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash;
+						безусловно открывает новые горизонты для первоочередных
+						требований.
+					</p>
+				</div>
+			</div>
+			<div class="form__block">
+				<form action="#" class="form" id="form">
+					<label for="name" class="input__check">
+						<input
+							class="form__input"
+							type="text"
+							name="Имя"
+							id="name"
+							placeholder="Имя*"
+							data-validate-field="name"
+						/>
+					</label>
+					<label for="phone" class="input__check">
+						<input
+							class="form__input"
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="Телефон*"
+							data-validate-field="tel"
+							data-validate-rules="phone"
+						/>
+					</label>
+
+					<label for="email" class="input__check">
+						<input
+							class="form__input"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="E-mail*"
+							data-validate-field="mail"
+						/>
+					</label>
+					<button class="form__btn">Заказать</button>
+				</form>
+			</div>
+			<div class="tooltip__block">
+				<div class="tooltip__content">
+					Следует отметить, что социально-экономическое развитие
+					способствует повышению качества переосмысления
+					внешнеэкономических политик.
+					<div class="tooltip__marker" tabindex="0">
+						<div class="tooltip__popup">
+							Глава 2, страница 176
+							<span class="tooltip__triangle"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Select -->
+		<script src="js/choices.min.js"></script>
+		<!-- Map -->
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<!-- Scroll -->
+		<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+		<!-- Validate -->
+		<script src="js/just-validate.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<!-- Scripts -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
